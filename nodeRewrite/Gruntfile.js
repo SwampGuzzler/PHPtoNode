@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     },
     simplemocha: {
 	  options: { timeout: 3000 },
-	    all: { src: ['test/**/*.js'] }
+	    all: { src: ['test/*.js'] }
 	}
   });
 

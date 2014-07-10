@@ -1,4 +1,5 @@
 var expect = chai.expect; 
+//var expect = require('chai').expect;
 
 describe('Quiz object tests', function() {
   var quiz;
