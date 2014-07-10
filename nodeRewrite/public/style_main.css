@@ -1,0 +1,255 @@
+/* CSS for Zoo Gallery site */
+body {
+   font-family: Georgia;
+   line-height: 18px;
+   font-size: 95%;
+/*   padding: 5px; */
+   background-color: rgb(240,247,255); 
+}
+
+
+li {
+	font-size: 1.2em;
+	line-height: 1.5em;
+	color: black;
+	list-style-type: none;
+}
+h1 {
+   font-family: Times New Roman;
+   font-size: 4.0em;
+   text-align: center;
+/*   color: rgb(255,184,31); */
+	color: white;
+}
+h2 {
+   font-family: Times New Roman;
+   font-size: 1.5em;
+   text-align: center;
+  }
+h3 {
+   font-family: Times New Roman;
+   font-size: 1.1em;
+   text-align: left;
+ } 
+#home_image {
+
+	height: 412px;
+}
+#slogan {
+	position: absolute;
+	top: 160px;
+	width: 1200px;
+	text-align: center; 
+}
+
+#basicpage {
+	width: 1250px;
+	height: 1500px;
+	margin: 0 auto;
+	padding-left: 8px;
+	background-color: rgb(210,230,255); 
+	border: 2px solid black; 
+}
+#image_answer {
+	width: 1300px;
+	height: 900px;
+	margin: 0 auto;
+	padding-left: 8px;
+	background-color: rgb(210,230,255); 
+	border: 2px solid black; 
+}
+
+#answerpage {
+	width: 1630px;
+	height: 1500px;
+	margin: 0 auto;
+	padding-left: 8px;
+	background-color: rgb(210,230,255); 
+	border: 2px solid black; 
+}
+#instructions {
+	position: absolute;
+	top: 620px;
+	left: 35%;
+}
+#buffer_div {
+	height: 50px;
+}
+#copyright {
+	font-size: 1.1em;
+	line-height: 1.5em;
+	color: black;
+	padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   width: 550px;
+/*   border: 1px solid red; */
+  }
+ #task_div ul {
+	list-style: none;
+} 
+#buffer_strip {
+	width: 30px;
+	float: right;
+}
+#right_home {
+	text-align: center;
+	width: 350px;
+	height: 350px;
+	float: right;
+   padding-top: 15px;
+   padding-bottom: 20px;
+   background-color: #EAF3FD;   
+   border: 2px solid navy; 
+}
+#last_right {
+	float: right;
+	width: 250px;
+}
+#task_div {
+   float: right;
+   width: 350px;
+   height: 350px;
+   border: 2px solid navy;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 15px;
+   padding-bottom: 20px;
+   background-color: white; 
+}  
+#right_block {
+	width: 500px;
+	height: 300px;
+	float: right;
+/*   border: 2px solid green; */
+}
+#radio_div {
+	width: 350px;
+/*	border: 1px solid red; */
+	float: right;
+	font-weight: bold;
+
+}
+#space_div {
+	width: 100px;
+	height: 350px;
+/*	  border: 2px solid orange; */
+	
+}	
+#radio_box {
+	width: 450px;
+	height: 310px;
+	overflow: scroll;		
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 20px;
+	border: 2px solid navy;
+	font-weight: bold;
+	background-color: rgb(227,255,217);
+}
+
+#return-spacer {
+	float: right;
+	width: 150px;
+	height: 400px;
+/*	border: 1px solid blue; */
+}
+#return-div {
+	float: right;
+/*	border: 1px solid red; */
+}	
+#image_div {
+/*	border: 1px solid green; */
+	width: 805px;
+}	
+#image_question_block {
+	float: left;
+	font-size: 1.02em;
+	height: 280px;
+	width: 850px;
+	overflow: scroll;	
+	border: 1px solid navy; 
+	padding-left: 10px;
+	padding-right: 15px;
+	padding-top: 4px;
+	padding-bottom: 8px;		
+}
+#button-bit {
+
+}
+#question_block {
+	font-size: 1.02em;
+	height: 280px;
+	width: 950px;
+	overflow: scroll;	
+	border: 1px solid navy; 
+	padding-left: 10px;
+	padding-right: 15px;
+	padding-top: 4px;
+	padding-bottom: 8px;		
+}
+#left_title {
+	font-size: 1.0em;
+/*	border: 1px solid green; */
+	width: 605px;
+	height: 30px;
+
+}
+#right_title {
+	font-size: 1.0em;
+	width: 460px;
+	height: 30px;
+
+	float: right;
+}
+#Q_and_A_block {
+	font-size: 1.02em;
+	height: 265px;
+	width: 1250px;
+	overflow: scroll;	
+	border: 1px solid navy; 
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 4px;
+	padding-bottom: 8px;		
+}
+
+
+#instruct-div {
+	font-size: 1em;
+	border: 2px solid navy; 
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 280px;
+	float: right;
+}
+#spacer {
+	float: right;
+	width: 80px;
+	height: 400px;
+/*	border: 1px solid red; */
+}
+#where_to {
+	width: 350px;
+	float: right;
+/*	border: 1px solid navy; */
+}
+
+#test-canvas {
+	float: left;
+	width: 800px;
+	height: 1200px;
+}
+#button-div {
+	visibility: visible;
+}
+
+
+
+
+
+

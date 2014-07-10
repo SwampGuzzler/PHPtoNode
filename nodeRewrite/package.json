@@ -1,0 +1,8 @@
+{
+  "name" : "hello-express",
+  "description" : "a hello world web application written in express",
+  "version" : "0.0.1",
+  "dependencies" : {
+    "express" : "^4.0"
+  }
+}
