@@ -2,3 +2,4 @@ node_modules/
 bin/
 PHPtoNode/
 app/bower_components/
+bower_components/
