@@ -1,5 +1,5 @@
 var expect = require('chai').expect,
-  Quiz = require('../lib/quiz');
+  Quiz = require('../public/quiz');
 
 describe('Quiz object tests', function() {
   var quiz;

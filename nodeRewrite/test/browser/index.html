@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Post tests</title>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
   <link rel="stylesheet" media="all" href="../../bower_components/mocha/mocha.css">
 </head>
 <body>
@@ -12,9 +13,21 @@
   <div id="fixtures"></div>
   <script src="../../bower_components/mocha/mocha.js"></script>
   <script src="../../bower_components/chai/chai.js"></script>
-  <script src="../../lib/quiz.js"></script>
+  <script src="../../public/quiz.js"></script>
   <script>mocha.setup('bdd')</script> 
   <script src="./quiz_test.js"></script>
   <script>mocha.run();</script>
+ 
+  
+  
+
+  <!--
+  Qunit and PhantomJS tests not working...
+  <div id="qunit"></div> 
+  <div id='qunit-fixture'>
+ 
+  </div>
+  <script src="../../bower_components/qunit/qunit/qunit.js"></script>
+  <script src="tests.js"></script>-->
 </body>
 </html>

@@ -20,3 +20,4 @@ casper.test.begin('home page', 3, function suite(test) {
   });
 
 });
+

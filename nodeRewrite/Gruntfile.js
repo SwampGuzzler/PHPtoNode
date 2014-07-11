@@ -25,7 +25,7 @@ module.exports = function(grunt) {
     },
     browserify: {
       all: {
-        src: 'lib/*.js',
+        src: 'public/*.js',
         dest: 'dist/app.js'
       },
       options: {
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
       },
     },
     jshint: {
-      all: ['Gruntfile.js', 'server.js', 'test/../*.js', 'lib/quiz.js']
+      all: ['Gruntfile.js', 'server.js', 'test/../*.js', 'public/quiz.js']
     },
     simplemocha: {
 	    options: { timeout: 3000 },
@@ -60,6 +60,9 @@ module.exports = function(grunt) {
         }
       }
     },
+    /*qunit: {
+      all: ['test/browser/*.html']
+    },*/
     watch: {
       options: {
         livereload: true
@@ -79,12 +82,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-browserify');
-  grunt.loadNpmTasks('grunt-contrib-copy');*/
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-qunit');*/
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks); //This allows us to skip the above 8 lines!
 
-
+  //grunt.registerTask('q', ['qunit']);
   grunt.registerTask('server', [ 'jshint', 'express:dev', 'watch' ]);
   grunt.registerTask('default', ['jshint','clean','browserify','copy']);
   grunt.registerTask('test', ['simplemocha','express:dev','casper']);
+
 
 };
