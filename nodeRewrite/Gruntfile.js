@@ -1,7 +1,5 @@
 module.exports = function(grunt) {
   
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  
   grunt.initConfig({
     express: {
       options: {
@@ -40,15 +38,27 @@ module.exports = function(grunt) {
           'test/acceptance/casper-results.xml' : ['test/acceptance/*_test.js']
         }
       }
+    },
+    watch: {
+      options: {
+        livereload: true
+      },
+      js: {
+        files: ["server.js"],
+        tasks: ["jshint", "concat:js"],
+      }
     }
 
   });
 
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-simple-mocha');
   grunt.loadNpmTasks('grunt-express-server');
   grunt.loadNpmTasks('grunt-casper');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('server', [ 'jshint', 'express:dev' ]);
+  grunt.registerTask('server', [ 'jshint', 'express:dev', 'watch' ]);
   grunt.registerTask('default','jshint');
   grunt.registerTask('test', ['simplemocha','express:dev','casper']);
+
 };
