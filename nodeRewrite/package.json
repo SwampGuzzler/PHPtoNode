@@ -22,6 +22,7 @@
     "grunt-mocha": "^0.4.11",
     "phantom": "^0.6.5",
     "phantomjs": "^1.9.7-14",
-    "grunt-contrib-qunit": "^0.5.2"
+    "grunt-contrib-qunit": "^0.5.2",
+    "jquery-browserify": "^1.8.1"
   }
 }

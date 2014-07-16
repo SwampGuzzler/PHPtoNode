@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
   
   grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
     clean: ['dist'],
     express: {
       options: {
@@ -23,6 +24,16 @@ module.exports = function(grunt) {
         }
       }
     },
+    copy: {
+      all: {
+        expand: true,
+        cwd: 'public/',
+        src: ['*.css', '*.html', '/images/**/*', '!Gruntfile.js'],
+        dest: 'dist/',
+        flatten: true,
+        filter: 'isFile'
+      },
+    },
     browserify: {
       all: {
         src: 'public/*.js',
@@ -35,18 +46,8 @@ module.exports = function(grunt) {
         debug: true
       }
     },
-    copy: {
-      all: {
-        expand: true,
-        cwd: 'public/',
-        src: ['*.css', '*.html', '/images/**/*', '!Gruntfile.js'],
-        dest: 'dist/',
-        flatten: true,
-        filter: 'isFile'
-      },
-    },
     jshint: {
-      all: ['Gruntfile.js', 'server.js', 'test/../*.js', 'public/quiz.js']
+      all: ['Gruntfile.js', '!bundle.js', 'server.js', 'test/../*.js', 'public/quiz.js']
     },
     simplemocha: {
 	    options: { timeout: 3000 },
