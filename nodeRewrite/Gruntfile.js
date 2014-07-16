@@ -26,6 +26,8 @@ module.exports = function(grunt) {
     browserify: {
       all: {
         src: 'public/*.js',
+        //maybe src should be ALL of public; not just the js files??
+        // I need to make more code available in the Browser! Why isn't the main.js jquery working?
         dest: 'dist/app.js'
       },
       options: {
