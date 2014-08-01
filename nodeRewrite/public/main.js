@@ -14,3 +14,6 @@ $(document).ready(function() {
 $('#main').click(function() {
 	$("#overlay").show();
 });
+L.Main = {
+    compute: function () { return 2; }
+}
